@@ -1,4 +1,4 @@
-# PWA Easy Setup for Laravel - Livewire, Vue.js & React.js
+# Laravel (PWA) Progressive Web Application - Livewire, Vue.js & React.js
 
 <center>
     <img width="956" alt="Screenshot 2024-10-04 at 10 34 23 PM" src="https://github.com/user-attachments/assets/d28879ad-84ef-4886-b454-cf10e53cddd9">
@@ -7,6 +7,7 @@
 
 [![Packagist License](https://img.shields.io/badge/Licence-MIT-blue)](https://github.com/eramitgupta/laravel-pwa/blob/main/LICENSE)
 [![Latest Stable Version](https://img.shields.io/packagist/v/erag/laravel-pwa?label=Stable)](https://packagist.org/packages/erag/laravel-pwa)
+[![Laravel Compatibility](https://badge.laravel.cloud/badge/erag/laravel-pwa)](https://packagist.org/packages/erag/laravel-pwa)
 [![Total Downloads](https://img.shields.io/packagist/dt/erag/laravel-pwa.svg?label=Downloads)](https://packagist.org/packages/erag/laravel-pwa)
 
 </div>
@@ -118,6 +119,10 @@ You can update your PWA manifest file by running:
 ```bash
 php artisan erag:update-manifest
 ```
+
+### Logo Path
+
+The logo file name is fixed as `logo.png`, so it must exist at `public/logo.png`.
 
 ## Usage 🛠️
 
@@ -282,6 +287,5 @@ Here’s a simple example of how to use this package:
 3. Add the `@PwaHead` directive in your layout file’s `<head>`.
 4. Add the `@RegisterServiceWorkerScript` directive before the closing `</body>` tag.
 5. Customize the `config/pwa.php` to fit your project’s needs.
-6. Run `php artisan erag:pwa-update-manifest` to update the manifest file.
+6. Run `php artisan erag:update-manifest` to update the manifest file.
 7. That's it! Your Laravel app is now PWA-enabled. 🚀
-
